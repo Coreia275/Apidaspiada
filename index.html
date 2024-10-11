@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerenciador de Piadas</title>
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Piadas</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Procure por uma piada</h2>
+            <input type="text" id="search-joke" placeholder="Digite o termo da piada">
+            <button id="fetch-search-joke">Buscar Piada</button>
+            <p id="joke"></p>
+            <p id="joke-length"></p> 
+        </div>
+        <div>
+            <button id="fetch-random-joke">Conheça uma nova piada</button>
+        </div>
+        <div>
+            <button id="fetch-logs">Exibir seu histórico</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>API</th>
+                        <th>Método</th>
+                        <th>Piada</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="log-table-body"></tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Excluir Registro do histórico (log)</h2>
+            <input type="text" id="idlog" placeholder="ID do Log">
+            <button id="delete-log">Excluir Log</button>
+        </div>
+        <div id="response-message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gerenciador de Piadas | Arthur Correa | Disciplina: Fundamentos ao Desenvolvimento Web</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
